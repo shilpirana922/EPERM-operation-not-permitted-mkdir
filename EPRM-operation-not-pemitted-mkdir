@@ -1,0 +1,18 @@
+EPERM: operation not permitted, mkdir 'C:\Users\Silpi
+
+For solving this error follow these steps:-
+1:  open this folder 'c:/users/' and then open the cmd inside this.
+2: in cmd execute this command 'DIR/X' it will return you a name of your user's folder in a form of a link copy that link. In my case:
+   SILPIR~1
+3: Now run these command given below:
+  a. npm config get cache   (and then copy the path of cache replace your username with that link given above) for example:
+           npm config get cache
+           C:\Users\SILPI RANA\AppData\Roaming\npm-cache  (replace 'SILPI RANA' with  'SILPIR~1' for example: 'C:\Users\SILPIR~1\AppData\Roaming\npm-cache' )
+   b. npm config set cache C:\Users\SILPIR~1\AppData\Roaming\npm-cache (put your path name for your drive's path name according to your pc)
+   c. now execute these command.
+   d. And then use react npx creater-react-app myapp
+   
+   NOTE: In some cases, you can also deactivate you windows defendar and antivirus.
+   
+   HAPPY HACKING
+   
